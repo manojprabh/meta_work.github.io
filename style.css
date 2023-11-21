@@ -214,6 +214,13 @@ hr{
     background-color: black;
     height: 1px;
 }
+@media  screen and (max-width:576px) {
+    hr{
+        width:100%;
+        background-color: red;
+        height: 1px;
+    }
+}
 .section-star-top{
     display:flex;
     background-image: url('images/bluestarg.jpg') !important;
