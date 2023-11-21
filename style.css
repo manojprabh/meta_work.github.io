@@ -33,7 +33,7 @@ p{
 .banner-right{
     display:inline-flex;
 }
-@media (max-width:991px) {
+@media (max-width:992px) {
     .banner-right img{
         height: 300px !important ;
         width:100%;
@@ -91,7 +91,7 @@ p{
     color: blue;    
 }
 
-@media (max-width: 991px){
+@media (max-width: 992px){
     .banner-left h1 {
         font-size: 30px !important;
     }
@@ -155,7 +155,7 @@ p{
     bottom:-50px;
     right:40px;
 }
-@media(max-width:991px){
+@media(max-width:992px){
     .section-blue-top{
         background-size:cover;
     }
@@ -202,7 +202,7 @@ p{
     height:100%;
     width: 100%; 
 }
-@media (max-width:991px) {
+@media (max-width:992px) {
     .white-top img{
         height: 300px !important ;
         align-items: end;
@@ -262,7 +262,7 @@ hr{
     height: 69px;
     border-radius: 0px;
 }
-@media(max-width:991px){
+@media(max-width:992px){
     .section-star-top{
         background-size:cover;
     }
