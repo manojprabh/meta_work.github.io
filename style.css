@@ -211,13 +211,13 @@ p{
 }
 hr{
     width:150%;
-    background-color: red;
+    background-color: black;
     height: 1px;
 }
 @media  screen and (max-width:576px) {
     hr{
         width:100%;
-        background-color: red;
+        background-color: black;
         height: 1px;
     }
 }
