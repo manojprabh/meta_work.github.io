@@ -90,7 +90,11 @@ p{
 .banner-left span{
     color: blue;    
 }
-
+@media (max-width:576px){
+    .banner-left ::before{
+        display: none;
+    }
+}
 @media (max-width: 992px){
     .banner-left h1 {
         font-size: 30px !important;
@@ -211,7 +215,7 @@ p{
 }
 hr{
     width:150%;
-    background-color: black;
+    background-color: red;
     height: 1px;
 }
 @media  screen and (max-width:576px) {
@@ -250,6 +254,18 @@ hr{
     position: absolute;
     left:50px;
     bottom:100px;
+}
+@media screen and (max-width:576px){
+    .star-content img{
+        width: 480px;
+        height: 192px;
+        position: absolute;
+        left:50px;
+        bottom:100px;
+}
+    .star-content h3{
+        font-size: 22px;
+    }
 }
 .star-content button{
     background: #E36429;
