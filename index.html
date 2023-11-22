@@ -1,448 +1,806 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Crypto Coins</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"></head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/x-icon" href="images/main-logo.png">
-    <style>
-    </style>
-</head>
-<body>
-    <header>
-        <div class="section-nab">
-            <div class="container">
-                <div class="top-nab">
-                    <nav class="navbar navbar-expand-lg navbar-light">
-                        <a class="navbar-brand" href="#">
-                            <img src="images/logo.jpg" alt="logo" title="logo">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse customNab" id="navbarSupportedContent">
-                          <ul class="navbar-nav">
-                            <li class="nav-item">
-                              <a class="nav-link" href="#">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Company</a>
-                              </li>
-                          </ul>
-                          <ul class="right-top-button ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <button class="btn">
-                                        <i class="fab fa-whatsapp"></i> Chat With Our Experts
-                                    </button>
-                                </a>
-                              </li>
-                          </ul>
-                        </div>
-                      </nav>
-                </div>
-            </div>
-        </div>
-            <div class="intro-banner">
-                <div class="container">
-                    <div class="top-banner">
-                        <div class="row">
-                             <div class="col-md-6">
-                                    <div class="banner-left">
-                                        <h1>Local<span>Bitcoins</span> Clone Script</h1>
-                                        <p>Make your crypto investment more successful using our LocalBitcoins clone script
-                                        </p>
-                                        <button class="btn">Contact Us</button>
-                                    </div>
-                                </div>
-                                    <div class="col-md-6 m-auto">
-                                        <img src="images/globe.jpg"  alt="globe-image" width="583" height="501" class="img-fluid">
-                                    </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="section-blue-top">
-                <div class="container">
-                    <div class="blue-top">
-                        <div class="row">
-                         <div class="col-lg-9 mx-auto">
-                                <div class="blue-top-right">
-                                    <h2>What is the LocalBitcons Clone Script?</h2>
-                                    <p>LocalBitcoins clone script is a ready-to-deploy P2P crypto exchange solution that is integrated with stunning 
-                                    features. Our LocalBitcoins clone script contains an awe-inspiring user interface that makes a potential 
-                                    trading process easy. With the powerful trading engine, users can buy and sell cryptocurrencies in no time.
-                                    Our LocalBitcoins clone software is completely customizable based on the business plan. We also offer top
-                                    secured features to users for their lucrative businesses.</p>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    font-family: 'Poppins', sans-serif !important;
+}
+.customNab button{
+    box-shadow: -10px 10px black;
+    background-color: rgb(73, 84, 199);
+}
+.customNab li {
+    padding-right: 30px;
+}
+.customNab ul li{
+    list-style-type:none;
+}
+.customNab ul li a:hover{
+    text-decoration: underline;
+}
+.customNab button{
+    color:white;
+}
+.intro-banner{
+    background-image: url('/images/top-bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-right{
+    display:inline-flex;
+}
+@media (max-width:992px) {
+    .banner-right img{
+        height: 300px !important ;
+        width:100%;
+}
+}
+.banner-left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+.banner-left h1{
+    color: #23292F;
+    font-size: 76px;
+    font-style: normal;
+    font-weight: 700;
+}
+.banner-left p{
+    color: #23292F;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 144.444% */
+}
+.banner-left ::after{
+    background-image: url('/images/btn-img.png');
+    position: absolute;
+    content:" ";
+    bottom:15px;
+    left:150px;
+    background-repeat: no-repeat;
+    display: block;
+    width:82px;
+    height: 109px;
+}
+.banner-left ::before{
+    background-image: url('/images/line.png');
+    position: absolute;
+    content:" ";
+    bottom:80px;
+    right:15px;
+    background-repeat: no-repeat;
+    display: block;
+    width:137px;
+    height: 124px;
+}
+.banner-left button{
+    width:150px;
+    height: 50px;
+    background-color: #4954C7;
+    color:white;
+    box-shadow: 5px 10px black;
+}
+.banner-left span{
+    color: blue;    
+}
+@media (max-width:576px){
+    .banner-left ::before{
+        display: none;
+    }
+}
+@media (max-width: 992px){
+    .banner-left h1 {
+        font-size: 30px !important;
+    }
+}
+.blue-top{
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.section-blue-top{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('/images/bluebg.JPG');
+    background-repeat: no-repeat;
+    background-position: center;
+    padding:50px 0px 100px !important;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-size: cover;
+}
+.blue-top-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blue-top-right h2{
+    color: #FFF;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+}
+.blue-top-right p{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.blue-top::after{
+    background-image: url('/images/star.png');
+    background-repeat: no-repeat;
+    content:" ";
+    display: block;
+    width:159px;
+    height:201px;
+    position:absolute;
+    top:80px;
+    left:80px;
+}
+.section-blue-top::before{
+    background: url('/images/bitlogo.jpg') scroll 0 0;
+    background-repeat: no-repeat;
+    content:" ";
+    display: block;
+    width:194px;
+    height:194px;
+    position:absolute;
+    bottom:-50px;
+    right:40px;
+}
+@media(max-width:992px){
+    .section-blue-top{
+        background-size:cover;
+    }
+}
 
-                                </div>
-                            </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-            <!--section white-->
-           <div class="section-white-top">
-            <div class="container">
-                    <div class="white-top">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="white-top-left">
-                                    <h3>Why Should You Create a
-                                         p2p Exchange Like
-                                         LocalBitcoins</h3>
-                                    <div class="list-contents">
-                                    <ul>
-                                        <li>
-                                            <p>LocalBitcoins are exclusively created for peer-to-peer transactions 
-                                            which grabbed most of the crypto users to invest in this
-                                             exchangeplatform. Here are some of the worthy reasons why users prefer this
-                                            crypto exchange platform.</p>
-                                        </li> 
-                                        <li>
-                                            <p>LocalBitcoins exchange platform is the right choice for
-                                                beginners who are starting their trade</p>
-                                             <hr>   
-                                        </li>   
-                                        <li>
-                                            <P>
-                                                This P2P exchange platform comes with top-appealing
-                                                security features that build trust and makes it unique among
-                                                 crypto users.
-                                                <hr>
-                                            </P>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                LocalBitcoins platform holds more than 1 million active crypto
-                                                <br> users and also it provides an option to raise revenue.
-                                                <hr>
-                                            </p>
-                                        </li>
-                                        <li>
-                                            <p>
-                                                Exchange platforms like LocalBitcoins offer trading packed
-                                                <br> with P2P-protected systems that allow users to trade cryptos
-                                                <br>in a secure and quick way.
-                                            </p>
-                            
-                                        </li>
-                                    </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-6">
-                                <div class="white-top-right">
-                                    <img src="images/mobile.jpg" alt="mobile-images" class="img-fluid">
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-            <div class="section-star-top">
-                <div class="container">
-                    <div class="star-top">
-                        <div class="star-content">
-                            <div class="row">
-                                <div class="col-lg-9 mx-auto">
-                                    <h3>
-                                        We can help you make your crypto exchange a
-                                        market leader using our LocalBitcoins clone script.
-                                    </h3>
-                                    <button class="btn">Talk to our team</button>
-                                </div>
-                                <div>
-                                    <img src="images/star-img.jpg" alt="star-img" 
-                                    class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <section class="section-card-top">
-                <div class="container">
-                    <div class="top-card">
-                        <h1>Features of LocalBitcoins <br> Clone Script</h1>
-                            <div class="row row-cols">
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="card">
-                                            <div class="content-lists">
-                                                <button class=" btn mx-auto">Elite Features</button>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Dispute management
-                                                </p>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Push notification
-                                                </p>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Multiple language support 
-                                                </p>
-                                                <p> 
-                                                    <i class="fas fa-check"></i>
-                                                    OTC trading option
-                                                </p>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Lie chat option
-                                                </p>
-                                                <p> 
-                                                    <i class="fas fa-check"></i>
-                                                    data statistics
-                                                </p>
-                                            </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="card">
-                                            <div class="content-lists">
-                                                <button class="btn">Security Features</button>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Escrow powered security
-                                                </p>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    CSRF protection
-                                                </p>
-                                                <p> 
-                                                    <i class="fas fa-check"></i>
-                                                    Jail login
-                                                </p>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Anti-phishing code
-                                                </p>
-                                                <p> 
-                                                    <i class="fas fa-check"></i>
-                                                    Bio-metrics enabled platform
-                                                </p>
-                                                <p> 
-                                                    <i class="fas fa-check"></i>
-                                                    KYC/AML verification
-                                                </p>
-                                            </div>
-                                    </div>
-                                </div>
-                                <d<div class="col-lg-4">
-                                    <div class="card">
-                                            <div class="content-lists">
-                                                <button class="btn">Security Features</button>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Content management system 
-                                                </p>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Ticket system
-                                                </p>
-                                                <p> 
-                                                    <i class="fas fa-check"></i>
-                                                    Exclusive home page
-                                                </p>
-                                                <p>
-                                                    <i class="fas fa-check"></i>
-                                                    Transaction record
-                                                </p>
-                                                <p> 
-                                                    <i class="fas fa-check"></i>
-                                                    Easy sign-in and sign up 
-                                                </p>
-                                                <p> 
-                                                    <i class="fas fa-check"></i>
-                                                    Order book
-                                                </p>
-                                            </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="section-brick-top">
-                    <div class="container">
-                        <div class="brick-top">
-                            <h2>Benefits of Developing LocalBitcoins clone</h2>
-                                <div class="row">
-                                        <div class="col-lg-3 roe1">
-                                            <div class="brick-1">
-                                                <img src="images/star-symbol.png" width="76px" height="75px">
-                                                <h3>Multi-payment
-                                                    modes</h3>
-                                                    <p>Our LocalBitcoins clone script supports multiple payment modes and accepts funds from a variety of sources. This option enables users to select the type of payment that is comfortable for their use.
-                                                    </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 roe1">
-                                            <div class="brick-2">
-                                                <img src="images/Bug-icon.png" width="75px" height="64px">
-                                                <h3>Double security authentication</h3>
-                                                    <p>Security is tightened to a greater extent to stop hackers from entering the exchange platform. Our LocalBitcoins clone is integrated with two-factor authentication which acts smartly and avoids third parties. Apart from this other security features are also enclosed to maintain the transactions in a protected manner.
-                                                    </p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 roe1">
-                                            <div class="brick-3">
-                                                <img src="images/coins.png" width="79px" height="75px">
-                                                <h3>Multi-currency access</h3>
-                                                    <p>LocalBitcoins provides different currency access which makes crypto trading simpler and easier. All types of cryptos are available on our exchange platform giving users a better choice for trading.</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-3 roe1">
-                                            <div class="brick-4">
-                                                <img src="images/hands.png" width="76px" height="75px">
-                                                <h3>Multi-currency access</h3>
-                                                    <p>Our LocalBitcoins exchange platform executes transactions in a quicker mode. Our smart contracts-enabled crypto exchange platform automates the workflow without human errors. The operation of programming codes enables the transactions to occur in faster way
-                                                    </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-            </section>
-            <section class="phone-top-section">
-                <div class="container">
-                    <div class="phone-top">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <img src="images/mobile2.png" width="644px" height="403px" class="img-fluid">
-                            </div>
-                            <div class="col-lg-6">
-                                <h1>LocalBitcoins Clone App Development</h1>
-                                <p>As users feel comfortable with mobile trading, we design a LocalBitcoins clone app with upgraded functionalities that bring a powerful trading experience. Our LocalBitcoins trading app brings the innate features into the mobile which carries out trade effectively.       </p>
-                                <p>
-                                    As users feel comfortable with mobile trading, we design a LocalBitcoins clone app with upgraded functionalities that bring a powerful trading experience. Our LocalBitcoins trading app brings the innate features into the mobile which carries out trade effectively.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="multi-trading-top">
-                <div class="container">
-                    <div class="multi-trading">
-                        <h1>Create a multi-trading streamlined crypto exchange with the LocalBitcoins clone. </h1>
-                        <div>
-                            <button class="mx-auto">Get a demo</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="tabular-card-top">
-                <div class="container">
-                    <div class="tabular-card">
-                        <h1>How Does Our LocalBitcoins<br>Clone Work?</h1>
-                        <div class="row d-flex">
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="table-sheet">
-                                        <div class="circle-number">
-                                            01
-                                        </div>
-                                        <div class="table-1">
-                                            <h2>Registration</h2>
-                                            <p>Users should create an account by registering into the LocalBitcoins exchange platform. Necessary details should be given for registration that initiates the trading of cryptocurrencies.
-                                            </p>
-                                        </div>      
-                                    </div>
-                                </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="table-sheet">
-                                    <div class="circle-number">
-                                        02
-                                    </div>
-                                    <div class="table-1">
-                                        <h2>Verification</h2>
-                                        <p>After the registration step, users would receive an email notification regarding the verification. Once the mail is verified users can proceed with trading.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-sm-6">
-                                <div class="table-sheet">
-                                    <div class="circle-number">
-                                        03
-                                    </div>
-                                    <div class="table-1">
-                                        <h2>Deposit the funds</h2>
-                                        <p>Users can connect to the crypto wallet and set up the payment options needed for transactions. Cryptocurrencies must be stored in the wallet for buying and selling crypto assets.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex">
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="table-sheet">
-                                        <div class="circle-number">
-                                            04
-                                        </div>
-                                        <div class="table-1">
-                                            <h2>Escrow services</h2>
-                                                <p>Cryptocurrencies are stored in escrow till the trade is processed on both sides. After the buyer receives the receipt of payment the funds are released.
-                                            </p> 
-                                        </div>      
-                                    </div>
-                                </div>
-                            <div class="col-lg-4 col-sm-6">
-                                <div class="table-sheet">
-                                    <div class="circle-number">
-                                        05
-                                    </div>
-                                    <div class="table-1">
-                                        <h2>Dispute resolution</h2>
-                                        <p>This option manages all the disputes that happen during trading. It brings resolution to all challenges that arise in terms of any issues.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                             <div class="col-lg-4 col-sm-6">
-                                <div class="table-sheet">
-                                    <div class="circle-number">
-                                        06
-                                    </div>
-                                    <div class="table-1">
-                                        <h2>Offline trading</h2>
-                                        <p>Users can proceed with offline trading using the chat system. It executes transactions based on the locations.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                    </div>
-                </div>
-            </section>
-            <section class="bottom-banner-top">
-                <div class="container">
-                    <div class="bottom-banner">
-                        <div class="row">
-                            <div class="col-lg-9 mx-auto">
-                                <h1>Why is MetaDiac the Best Option For You?</h1>
-                                <p>Global crypto pioneer MetaDiac is a reputable company in the field of crypto development. Our leading cryptocurrency exchange service provider offers a variety of customizable crypto exchange clone solutions.
-                                </p>
-                                <p>We have a dedicated team of developers who develop and design your P2P project similar to the LocalBitcoins exchange. We at MetaDiac use updated technical tools in developing the crypto exchange platform effectively. If you are an active crypto investor, shake hands with us for your dream project.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    </header>
-</body>
-</html>
+.list-contents ul {
+    list-style-type: none;
+    padding: 0px;
+    text-align: start;
+    
+}
+.white-top h3{
+    color: #23292F;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+}
+.white-top{
+    display: flex;
+}
+.section-white-top{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('/images/whitebg.jpg');
+    margin-top:-50px; 
+    margin-top: -100px;
+    padding:50px;
+
+}
+.section-white-top img{
+    width:100%;
+}
+.white-top-left{
+    display: inline-flex;
+    flex-direction: column;
+    width:100%;
+   
+}
+.white-top-right{
+    display: inline-flex;   
+    align-items: center;  
+    height:100%;
+    width: 100%; 
+}
+@media (max-width:992px) {
+    .white-top img{
+        height: 300px !important ;
+        align-items: end;
+        width: 50%;
+}
+}
+hr{
+    width:150%;
+    background-color: red;
+    height: 1px;
+}
+@media  screen and (max-width:576px) {
+    hr{
+        width:100%;
+        background-color: black;
+        height: 1px;
+    }
+}
+.section-star-top{
+    display:flex;
+    background-image: url('/images/bluestarg.jpg') !important;
+    text-align: center;
+    padding: 130px 0px 120px;
+    margin-top: -50px;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+}
+.star-content {
+    color:white;
+}
+.star-content h3{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 137.5% */
+}
+.star-content img{
+    width: 1250px;
+    height: 292px;
+    position: absolute;
+    left:50px;
+    bottom:100px;
+}
+@media screen and (max-width:576px){
+    .star-content img{
+        width: 480px;
+        height: 192px;
+        position: absolute;
+        left:50px;
+        bottom:100px;
+}
+    .star-content h3{
+        font-size: 22px;
+    }
+}
+.star-content button{
+    background: #E36429;
+    position: relative;
+    z-index: 1;
+    border:2px solid black;
+    color:white;
+    margin-top:30px;
+    width: 283px;
+    height: 69px;
+    border-radius: 0px;
+}
+@media(max-width:992px){
+    .section-star-top{
+        background-size:cover;
+    }
+    .startop img{
+            height: 30px !important;
+    }
+}
+.section-card-top p{
+    color: #23292F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 250% */
+}
+.section-card-top h1{
+    color: #23292F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+    margin-bottom:50px;
+}
+.section-card-top button{
+    background-color: #4954C7;
+    color:white;
+    padding: 10px 30px;
+    box-shadow: 10px 10px black;
+    margin:30px;
+    position: relative;
+    left:20px;
+}
+.section-card-top ul li{
+    list-style-type: none;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 0px;
+    line-height: 50px;
+    height: 100%;
+}
+.section-card-top ul li::before{
+    content: " ";
+    background-image: url('/images/tick.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    top: 10px;
+    width: 31px;
+    height: 31px;
+    left: -40px;
+    align-items: start;
+}
+.section-card-top{
+    background-image: url('/images/whitebg.jpg');
+    padding-bottom: 150px;
+    margin-top: -30px;
+    background-size: cover;
+    position: relative;
+    padding: 130px 0px 220px !important;
+}
+.section-card-top::after{
+    content:"";
+    background-image: url('/images/red-star.jpg');
+    background-repeat: no-repeat;
+    display: block;
+    width:147px;
+    height:141px;
+    position:absolute;
+    bottom:-60px;
+    right: 150px;
+    z-index: 1;
+}
+.tile1{
+    background-color: white;
+}
+
+.tile1 ul li
+{
+    margin-left:50px;
+}
+.tile1 button{
+    font-size: 20px;
+    background-color: #4954C7;
+    padding:10px 50px;
+    border-radius: 0px;
+}
+.tile-head{
+    text-align: center;
+    padding-top:15px;
+}
+.card{
+    height: 100%;
+    align-items: center;
+}
+.card p{
+    color: #23292F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 250% */
+}
+.card:hover{
+    background-color:#4954C7;
+    height:120%;
+    margin-top:-50px;
+    border:2px #FFF;
+}
+.card .btn{
+    border-radius: 0px;
+}
+.card:hover{
+    .btn{
+        color: #4954C7;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30.5px; /* 127.083% */
+        background-color: #FFF;
+    }
+}
+.row-cols{
+    background: #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.tile2 button{
+    font-size: 20px;
+    margin-top:50px;
+    background-color: white;
+    color:#4954C7;
+    padding:10px 50px;
+    border-radius: 0px;
+}
+.tile2 ul li
+{
+    margin-left:50px;
+}
+.tile3{
+    background-color: white;
+}
+.tile3 button{
+    font-size: 20px;
+    background-color: #4954C7;
+    position: relative;
+    padding:10px 50px;
+    border-radius: 0px;
+}
+.tile3 ul li
+{
+    margin-left:50px;
+}
+.contain-row{
+    background-color: white;
+    margin-top:80px;
+
+}
+.content-card-head h1{
+    padding-top:70px;
+    padding-bottom: 30px;
+    line-height: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.slide-tops h3{
+    color: #23292F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+    margin:150px 0px 50px;
+}
+.brick-row{
+    height: 100%;
+}
+.brick-top{
+    position: relative;
+}
+.section-brick-top::before{
+    content:"";
+    background-image: url('/images/blue-brick.jpg');
+    background-repeat: no-repeat;
+    width:180px;
+    height:206px;
+    position:absolute;
+    top:10px;
+    left:-20px;
+    display: block;
+}
+.section-brick-top::after{
+    content:" ";
+    background-image: url('/images/red-brick.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom:50px;
+    right:350px;
+    width:280px;
+    height: 131px;
+    display: block;
+}
+.section-brick-top {
+    background-image: url('/images/benefit_bg.jpg');
+    background-repeat: no-repeat;   
+    padding:120px 0px 220px !important;
+    position: relative;
+    margin-top: -50px;
+    background-size: cover;
+}
+.brick-top h2{
+    color: #23292F;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+    padding:20px;
+}
+
+.brick-1{
+    padding:15px;
+    border: 2px solid #4954C7;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+
+}
+.roe1 :hover{
+    background-color: #E36429;
+    box-shadow: 10px 10px #E36429;  
+    outline-color: transparent;
+}
+.brick-1 h3{
+    margin-top:10px;
+    color: #23292F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30.5px;  
+}
+.brick-1 p{
+    color: #23292F;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */ 
+}
+.brick-2{
+    padding:15px;
+    border: 2px solid #4954C7;
+}
+.brick-2 h3{
+    color: black;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30.5px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.brick-2 p{
+    color: black;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.brick-3{
+    padding: 15px;
+    justify-content: center;
+    border: 2px solid #4954C7;
+    margin-top: 50px;
+}
+.brick-3 h3{
+    color: #23292F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30.5px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.brick-3 p{
+    color: #23292F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.brick-4{
+    padding:15px;
+    justify-content: center;
+    border: 2px solid #4954C7;
+}
+.brick-4 h3{
+    color: #23292F;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30.5px; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+.brick-4 p{
+    color: #23292F;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.phone-top-section{
+    background-image: url('/images/whitebg.jpg');
+    background-repeat: no-repeat;
+    padding:130px 0px 230px !important;
+    position: relative;
+    margin-top: -50px;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+}
+.phone-top-section h1{
+    color: #23292F;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+}
+.phone-top-section p{
+    color: #23292F;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.phone-top-section img-fluid{
+    height: auto;
+    max-width: 100%;
+}
+.multi-trading-top{
+    background-image: url('/images/bluestarg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-top: -50px;
+}
+.multi-trading-top::before{
+    background-image: url('/images/star-img.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 1;
+    content:"";
+    display: block;
+    width:1254px;
+    height:292px;
+    right: 30px;
+}
+.multi-trading{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    padding:100px;
+}
+.multi-trading-top h1{
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 44px; /* 137.5% */
+}
+.multi-trading-top button{
+    background: #E36429;
+    padding:10px 20px;
+    position: relative;
+    z-index: 1;
+    margin: 30px;
+    color:white;
+}
+.tabular-card-top{
+    background-image: url('/images/blackbg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top:-150px;
+    padding:130px  0px 220px !important;
+    position:relative;
+}
+.tabular-card-top .table-1::before{
+    content:"";
+    width:70%;
+    justify-content: center;
+    left:30px;
+    top:-50px;
+    z-index: -1;
+    height: 150%;
+    position: absolute;
+    margin-bottom: 10px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+}
+.circle-number{
+    display: flex;
+    height:60px;
+    width:20%;
+    border:2px solid white;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:-80px;
+    left:100px;
+    z-index: -2;
+    
+}
+.row2{
+    margin-top:180px;
+}
+
+.table-sheet :hover{
+    background: #E36429 !important;
+}
+@media (max-width: 762px){
+    .col-lg-4 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+
+.tabular-card{
+    color: #FFF;
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+    padding:10px;
+    z-index:1;
+    position: relative;
+}
+
+.tabular-card h2{
+    text-align: left;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30.5px; /* 127.083% */
+    padding:15px;
+}
+.tabular-card p{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    padding:15px;
+    text-align: left;
+}
+.tabular-card .table-1{
+    background-color: #4954C7;
+    border: 1px solid #FFF;
+    height: 230px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.10);
+    margin:20px 0px;
+}
+
+.tabular-card-top h1{
+    color:white;
+    margin-bottom:150px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+}
+.bottom-banner-top{
+    background-image: url('/images/whitebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:-180px;
+    padding:130px 0px 120px !important;
+    position: relative;
+    z-index: -1;
+}
+.bottom-banner-top h1{
+    color: #23292F;
+    text-align: center;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 54px; /* 122.727% */
+}
+.bottom-banner-top p{
+    color: #23292F;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+.bottom-banner{
+    margin:50px 0px;
+}
+.bottom-banner-top::before{
+    background-image: url('/images/bottom-bg.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    content:"";
+    width:1233px;
+    height:325px;
+    display: block;
+    top:130px;
+    right:20px;
+}
